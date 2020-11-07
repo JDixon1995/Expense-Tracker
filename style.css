@@ -1,0 +1,15 @@
+#leftContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+#centerContainer {
+    display: flex;
+    align-items: center;
+}
+
+#rightContainer {
+    display: flex;
+    align-items: flex-end;
+}
+    
