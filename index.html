@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>Budget Tracker</h1>
-    <form id="inputForm">
-        <input type="number">
-        <button type="submit" id="budgetButton">Add Budget</button>
+    <form onsubmit="return false">
+        <input id="inputForm" type="number">
+        <button type="submit" id="budgetButton" onclick="getBudgetAmount();">Add Budget</button>
     </form>
     <div>
     <h2>Budget</h2>
