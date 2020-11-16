@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Budget Tracker
     </title>
 </head>
 <body>
+    <div id="main">
     <h1>Budget Tracker</h1>
     <form onsubmit="return false">
         <input id="inputForm" type="number">
         <button type="submit" id="budgetButton" onclick="getBudgetAmount();">Add Budget</button>
     </form>
-    <div>
+    <br>
+    <form onsubmit="return false">
+        <input id="expenseInput" type="number">
+        <button type="submit" id="expenseButton" onclick="logExpense();">Add Expense</button>
+    </form>
+    <br>
+    </div>
+    <div id="leftContainer">
     <h2>Budget</h2>
-    <p id="budgetAmount">$</p>
+    <p id="budgetAmount"></p>
     </div>
-    <div>
+    <div id="centerContainer">
         <h2>Expenses</h2>
-        <p id="expenses">$</p>
+        <table id="expenses">
+
+        </table>
     </div>
-    <div>
+    <div id="rightContainer">
         <h2>Balance</h2>
-        <p id=balanceAmount>$</p>
+        <p id=balanceAmount></p>
     </div>
     <script type="text/javascript" src="main.js"></script>
 </body>

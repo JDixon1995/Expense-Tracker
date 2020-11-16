@@ -1,15 +1,34 @@
+#budgetAmount {
+    color: green;
+}
+
+#expenses {
+    color: red;
+}
+
+#main {
+    text-align: center;
+}
+
 #leftContainer {
-    display: flex;
-    align-items: flex-start;
+    float: left;
+    width: 33%;
+    border: green;
+    border-style: solid;
 }
 
 #centerContainer {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    width: 32%;
+    margin: auto;
+    border: red;
+    border-style: solid;
 }
 
 #rightContainer {
-    display: flex;
-    align-items: flex-end;
+    position: absolute; bottom: 0;
+    width: 33%;
+    border: black;
+    border-style: solid;
+    line-height: normal;
 }
-    
